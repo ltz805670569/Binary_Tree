@@ -142,7 +142,7 @@ public class TreeSortList {
                      Node temp = getSmallest(node.right);
                      node.data = temp.data;
                      node.right = remove(node.right,temp.data);
-                     return temp;
+                     return node;
                  }
             }else {
                 if(data < node.data){
